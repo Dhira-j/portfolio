@@ -4,6 +4,48 @@
 --bgOrange:#e84949;
 
 }
+
+* {
+  cursor: none; /* Hide default cursor */
+}
+
+a, input, textarea, button, select, p, h1, h2, h3, h4, h5, h6 {
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  
+  font-family: Arial, sans-serif;
+}
+
+.cursor, .follower {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+.cursor {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border: 2px solid cyan;
+  box-shadow: 0 0 10px cyan;
+}
+
+.follower {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(0, 255, 255, 0.2);
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  transition: transform 0.1s ease-out;
+}
+
+
 *{
     margin: 0;
     padding: 0;
